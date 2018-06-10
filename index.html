@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="owlCarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlCarousel/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<!--  font-family: 'Roboto Slab', serif; -->
+  
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="moveMenu.css">
+  <link rel="stylesheet" href="crossovers.css">
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  
+
+  <title>Portfolio</title>
+
+  <style>
+    /* Crutch in my code */
+    .crutch_timer {
+      overflow: auto;
+      text-align: center;
+
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .crutch_timer img {
+      display: inline-block;  
+      animation: timing 60s infinite steps(60);
+    }
+
+    @keyframes timing {
+      100%{
+       transform: rotate(-360deg);
+      }
+    }
+  </style>
+</head>
+<body class="">
+<div class="wrapper">
+  <nav class="menu">
+      <div class="theme_color" alt="&#127779;">  
+        <input type="checkbox" value="None" id="check" name="check" checked />
+        <label for="check"></label>
+      </div>
+
+    <ul>
+      <li class="btMenu btHome"><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+      <li class="btMenu btAbout"><a href="#"><i class="fab fa-napster"></i><span>About</span></a></li>
+      <li class="btMenu btSkills"><a href="#"><i class="far fa-gem"></i><span>Skills</span></a></li>
+      <li class="btMenu btWork"><a href="#"><i class="fas fa-code"></i><span>My work</span></a></li>
+      <li class="btMenu btContact"><a href="#"><i class="far fa-envelope"></i><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <div class="wrapper about">
+      <div class="container-fluid macOS_window">
+        <div class="row macOS_bar justify-content-center">About Me</div>
+        <div class="row macOS_content">
+          <div class="theme-num col-sm-1 d-sm-block d-none">
+            <script>
+              num = 999;
+              function codeRow(l) {
+                for(var i=0; i<l; i++) {
+                  /*console.log(i + 1);*/
+                  var r = i +1;
+                  if(i < 9 && !( i > 99)) {
+                    document.write('00' + r + '</br>');
+                  } else if( i > 98) {
+                    document.write( r + '</br>');
+                  } else {
+                    document.write('0' + r + '</br>');
+                  }
+                }
+              }
+              codeRow(num);
+            </script>
+          </div>
+          
+          <div class="aboutContent col-sm-11 col-12">
+            <p>html</p>
+            <div class="container-fluid tagConnectLine">
+              <p>body</p>
+              <div class="row title_block">
+                <p>head</p>
+                <div class="col-12 tagConnectLine">
+                  <p>title</p>
+                  <h1 class="tagConnectLine fontCookie">About</h1>
+                  <p>/title</p>
+                </div>
+                <p>/head</p>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <p>h1</p>
+                    <h1 class="tagConnectLine fontCookie">Hi, <br>
+                    I'm <span>Dima</span>, <br>
+                    <i>web developer</i>.</h1>
+                    <h5 class="tagConnectLine fontCookie">
+                      <span>h3</span> Front End Developer / WordPress <span>/h3</span>
+                    </h5>
+                  <p>/h1</p>
+                  
+                </div>
+                 
+                <div class="col-12 textInfo">
+                  <p>personal summary</p>
+                  <div id="aboutMe" class="tagConnectLine fontPacifico">&emsp;Inventive, persistent and creative Web developer with experience in creating various types of sites (landing, online store, corporate sites, etc.). Having experience working with PSD layouts, various libraries (CSS/JS), coding of websites, and CMS WordPress. However my sphere of interests could not be measured only by web-development. I am curios in programming generally and in self-development in particular.</div>
+                  <p>/personal summary</p>
+                </div>
+
+                <div class="col-12 textInfo">
+                  <div class="continer-fluid">
+                    <p>academic qualifications</p>
+                    <div class="row tagConnectLine">
+                      <div class="col-12">
+                        <p>university name</p>
+                        <h3 class="tagConnectLine fontCookie">National Pedagogical Dragomanov University</h3>
+                        <p>/university name</p>
+                      </div>
+                      <div class="col-12">
+                        <h5 class="fontCookie"><span>year</span> 2015 - current time <span>/year</span></h5>
+                      </div>
+                      <div class="col-12">
+                        <h5 class="fontCookie"><span>specialty</span> Bachelor - Software Engineering  <span>/specialty</span></h5>
+                      </div>
+                    </div>
+                    <p>/academic qualifications</p>
+                  </div>
+                </div>
+              </div>
+              <p>/body</p>
+            </div>
+            <p>/html</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper contact">
+      <div class="macOS_window container-fluid">
+        <div class="macOS_bar row justify-content-center">Contact me</div>
+        <div class="macOS_content row">
+           <div class="theme-num col-sm-1 d-sm-block d-none">
+              <script>
+              num = 999;
+              function codeRow(l) {
+                for(var i=0; i<l; i++) {
+                  /*console.log(i + 1);*/
+                  var r = i +1;
+                  if(i < 9 && !( i > 99)) {
+                    document.write('00' + r + '</br>');
+                  } else if( i > 98) {
+                    document.write( r + '</br>');
+                  } else {
+                    document.write('0' + r + '</br>');
+                  }
+                }
+              }
+              codeRow(num);
+              </script>
+            </div>
+          <div class="aboutContent col-sm-11 col-12">
+          <p>html</p>
+          <div class="container-fluid tagConnectLine">
+            <p>body</p>
+            <div class="row title_block tagConnectLine">
+              <p>head</p>
+              <div class="col-12 tagConnectLine">
+                <p>title</p>
+                <h1 class="tagConnectLine fontCookie">Contact</h1>
+                <p>/title</p>
+              </div>
+              <p>/head</p>
+            </div>
+
+            <div class="row tagConnectLine">
+              <div class="col-12 textInfo">
+                <p>my phone</p>
+                  <h5 class="tagConnectLine fontCookie">
+                    <i id="phone">+38-(068)-020-5418</i>
+                    <button onclick="copyToClipboard('#phone')" data-description="Copy"><i class="far fa-copy"></i></button>
+
+                    <button><a href="tel:+38-068-020-5418">Call me </a><i class="fas fa-phone-square"></i></button>
+                  </h5>                 
+                <p>/my phone</p>
+              </div>
+                
+              <div class="col-12 textInfo">
+                <p>my mail</p>
+                  <h5 class="tagConnectLine fontCookie">
+                    <i id="mail">15fi.d.rybachek@std.npu.edu.ua</i>
+
+
+                    <button onclick="copyToClipboard('#mail')" data-description="Copy"><i class="far fa-copy"></i></button>
+
+                    <button><a href="mailto:15fi.d.rybachek@std.npu.edu.ua">Send mail </a> <i class="far fa-envelope"></i></button>
+                  </h5>                 
+                <p>/my mail</p>
+              </div>
+
+              <div class="col-12 textInfo">
+                <p>I in social networks</p>
+                <div class="container-fluid tagConnectLine">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3">
+                      <span>
+                        <a href="https://t.me/dmytrorybachek"><i class="fab fa-telegram-plane"></i></a>
+                      </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                      <span>
+                        <a href="https://www.linkedin.com/in/dmytro-rybachek-99b746163/"><i class="fab fa-linkedin-in"></i></a>
+                      </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                      <span>
+                        <a href="https://vk.com/kiborg_ukranian"><i class="fab fa-vk"></i></a>
+                      </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                      <span>
+                        <a href="viber://chat?number=+380680205418"><i class="fab fa-viber"></i></a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <p>/I in social networks</p>
+              </div>
+            </div>
+            <p>/body</p>
+          </div>
+          <p>/html</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper skills">
+      <div class="container-fluid macOS_window">
+        <div class="row macOS_bar justify-content-center">My Skills</div>
+          <div class="row macOS_content">
+            <div class="theme-num col-sm-1 d-sm-block d-none">
+              <script>
+              num = 999;
+              function codeRow(l) {
+                for(var i=0; i<l; i++) {
+                  /*console.log(i + 1);*/
+                  var r = i +1;
+                  if(i < 9 && !( i > 99)) {
+                    document.write('00' + r + '</br>');
+                  } else if( i > 98) {
+                    document.write( r + '</br>');
+                  } else {
+                    document.write('0' + r + '</br>');
+                  }
+                }
+              }
+              codeRow(num);
+              </script>
+            </div>
+            <div class="aboutContent col-12">
+              <p>html</p>
+              <div class="container-fluid tagConnectLine">
+                <p>body</p>
+                <div class="row title_block tagConnectLine">
+                  <p>head</p>
+                  <div class="col-12 tagConnectLine">
+                    <p>title</p>
+                    <h1 class="tagConnectLine fontCookie">Skills</h1>
+                    <p>/title</p>
+                  </div>
+                  <p>/head</p>
+                </div>
+
+                <div class="row tagConnectLine skillDesk">
+                  <div class="col-12 textInfo">
+                    <p>areas of expertise</p>
+                    <div class="tagConnectLine container-fluid">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">JavaScript</h2>
+                            <span>The Basics of Language, OOP in JS, DOM, Regular expressions, CSS for JavaScript, Canvas painting</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Others JS libraries </h2>
+                            <span>JQuery, AJAX, Slick, Fancybox, Owl Crousel, particles.js, wow.js, etc.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">CMS WordPress</h2>
+                            <span>Administration site in this CMS, Creating and maintaining themes, Work with plugins, Adding sites to the search engine and indexing settings, and e.g.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Different WordPress Plugins</h2>
+                            <span>Polylang, Woocommerce, Advanced Custom Fields, etc.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Cross-browser development</h2>
+                            <span>Simple Code, Use Frameworks, Define Valid Doctype, CSS Reset, Validate code, Cross-Browser Testing.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Cross-platform development</h2>
+                            <span>Simple and clean code, Using grid system, Adaptive and responsive layout, etc.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Object Oriented Programming</h2>
+                            <span>Іtudied the OOP as part of the discipline at the university and independently named the OOP specifications in JS.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Always use during work / training</h2>
+                            <span>Github and Git, Open Server, Photoshop, FileZilla, phpMyAdmin, Sublime Text, Visual Studio and ect.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Work experience with different programs</h2>
+                            <span>Microsoft SQL Server, SQL Server Management, VirtualBox MS Office, Visual Studio Application and ect.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">HTML&CSS</h2>
+                            <span>HTML5, XML, XHTML, CSS3, and e.g.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">PHP&SQL</h2>
+                            <span>Use during work with themes, plugins, and different exercise.</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                          <a href="#">
+                            <h2 class="fontCookie">Bootstrap</h2>
+                            <span>Others version Bootstrap 3 and Bootstrap .</span>
+                          </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4  col-sm-6 col-12" style="display: none;">
+                          <a href="#">
+                            <h2 class="fontCookie">Others language programing</h2>
+                            <span>C++, C#</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <p>/areas of expertise</p>
+                  </div>
+                  <div class="col-12 textInfo pSkills">
+                    <div class="continer-fluid">
+                      <p>personal skills</p>
+                      <div class="row tagConnectLine">
+                        <h1 class="fontCookie">
+                          <i class="fab fa-studiovinari"></i></i><i>Creativity</i> <br>
+                          <i class="fab fa-earlybirds"></i><i>Attention to detail</i> <br>
+                          <i class="fas fa-fighter-jet"></i><i>Learning quickly</i> <br>
+                          <i class="fas fa-users"></i><i>Communication</i> <br>
+                          <i class="fas fa-poo"></i><i>Have a good sense of humor</i>
+                      </h1>
+                      </div>
+                      <p>/personal skills</p>
+                    </div>
+                  </div> 
+                </div>
+                <p>/body</p>
+              </div>
+              <p>/html</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="wrapper work">
+      <div class="container-fluid macOS_window">
+        <div class="row macOS_bar justify-content-center">My work</div>
+          <div class="row macOS_content">
+            <div class="theme-num col-sm-1 d-sm-block d-none">
+              <script>
+              num = 999;
+              function codeRow(l) {
+                for(var i=0; i<l; i++) {
+                  /*console.log(i + 1);*/
+                  var r = i +1;
+                  if(i < 9 && !( i > 99)) {
+                    document.write('00' + r + '</br>');
+                  } else if( i > 98) {
+                    document.write( r + '</br>');
+                  } else {
+                    document.write('0' + r + '</br>');
+                  }
+                }
+              }
+              codeRow(num);
+              </script>
+            </div>
+            <div class="aboutContent col-sm-11 col-12">
+              <p>html</p>
+              <div class="container-fluid tagConnectLine">
+                <p>body</p>
+                <div class="row title_block tagConnectLine">
+                  <p>head</p>
+                  <div class="col-12 tagConnectLine">
+                    <p>title</p>
+                    <h1 class="tagConnectLine fontCookie">My development as a Web developer</h1>
+                    <p>/title</p>
+                  </div>
+                  <p>/head</p>
+                </div>
+
+                <div class="row tagConnectLine">
+                  <p>kozak arsenal</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">                    
+                      <h3 class="fontCookie">Online store weapon "Kozak Arsenal"</h3>
+                      <h5 class="fontCookie"><span>h3</span> <i>my first project</i> <span>/h3</span></h5>
+                      <div class="container-fluid">
+                        <p>work done</p>
+                        <div class="row tagConnectLine">
+                          <div class="col-12">
+                            <span class="fontPacifico">Search and create content</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Create structure site</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Add site in search system google and yandex</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Set up site indexing</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Set up various plugins for store needs</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Minimal writing HTML and CSS code</span>
+                          </div>
+                        </div>
+                        <p>/work done</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/ka.png" alt="">
+                    </div>
+                    <div class="col-lg-12 linkVisitSite fontPacifico align-middle">
+                        <a href="http://kozak-arsenal.com.ua/" target="_blank">Visit site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  <p>/kozak arsenal</p>
+                </div>
+
+                <div class="row tagConnectLine pt-5">
+                  <p>game in JS</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">
+                      <h3 class="fontCookie">Game arkanoid</h3>
+                      <h5 class="fontCookie"><span>h3</span> <i>game in alpha test mode, the final version is lost</i> <span>/h3</span></h5>
+                      <div class="container-fluid">
+                        <p>work done</p>
+                        <div class="row tagConnectLine">
+                          <div class="col-12">
+                            <span class="fontPacifico">Has developed Arkanoid game on JavaScript by means of OOP.</span>
+                          </div>
+                        </div>
+                        <p>/work done</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/arkanoid.png" alt="">
+                    </div>
+                    <div class="col-lg-12 linkVisitSite fontPacifico align-middle">
+                        <a href="https://github.com/Darker-than-Black/arkanoid" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                  <p>/game in JS</p>
+                </div>
+
+                <div class="row tagConnectLine pt-5">
+                  <p>ABR</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">
+                      <h3 class="fontCookie">Business site "ABR rifle ammunition"</h3>
+                      <h5 class="fontCookie"><span>h3</span> <i>help my friend with the project</i> <span>/h3</span></h5>
+                      <div class="container-fluid">
+                        <p>work done</p>
+                        <div class="row tagConnectLine">
+                          <div class="col-12">
+                            <span class="fontPacifico">HTML & CSS created three pages</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Cross-platform development</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Responsive layout</span>
+                          </div>
+                        </div>
+                        <p>/work done</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/abr.png" alt="">
+                    </div>
+                    <div class="col-lg-12 linkVisitSite fontPacifico align-middle">
+                        <a href="https://github.com/Darker-than-Black/main-page" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                  <p>/ABR</p>
+                </div>
+
+                <div class="row tagConnectLine pt-5">
+                  <p>travel in Andorra</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">
+                      <h3 class="fontCookie">Landing "Travel in Andorra"</h3>
+                      <div class="container-fluid">
+                        <p>work done</p>
+                        <div class="row tagConnectLine">
+                          <div class="col-12">
+                            <span class="fontPacifico">HTML & CSS created landing</span>
+                          </div>
+                        </div>
+                        <p>/work done</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/andorra.png" alt="">
+                    </div>
+                    <div class="col-lg-12 linkVisitSite fontPacifico align-middle">
+                        <a href="https://github.com/Darker-than-Black/travel-in-andorra" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                  <p>/travel in Andorra</p>
+                </div>
+
+                <div class="row tagConnectLine pt-5">
+                  <p>Diplomatic Academy</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">
+                      <h3 class="fontCookie">Hennadii Udovenko Diplomatic Academy Of Ukraine at the Ministry of Foreign Affairs of Ukraine</h3>
+                      <h5 class="fontCookie"><span>h3</span> <i>work experience web developer</i> <span>/h3</span></h5>
+                      <div class="container-fluid">
+                        <p>work done</p>
+                        <div class="row tagConnectLine">
+                          <div class="col-12">
+                            <span class="fontPacifico">Technical support site</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Cross-browser and cross-platform development </span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Creating new sections of the site</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Create mobile version site</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Create english version site</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Сonstant code review</span>
+                          </div>
+                        </div>
+                        <p>/work done</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/dip_academ.png" alt="">
+                    </div>
+                    <div class="col-lg-12 linkVisitSite fontPacifico align-middle">
+                        <a href="http://da.mfa.gov.ua/" target="_blank">Visit site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                  <p>/Diplomatic Academy</p>
+                </div>
+
+                <div class="row tagConnectLine pt-5">
+                  <p>coffe maker</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">
+                      <h3 class="fontCookie">Landing "Coffe maker"</h3>
+                      <h5 class="fontCookie"><span>h3</span> <i>create landing by taking tasks from Dev Challenge 11</i> <span>/h3</span></h5>
+                      <div class="container-fluid">
+                        <p>work done</p>
+                        <div class="row tagConnectLine">
+                          <div class="col-12">
+                            <span class="fontPacifico">Many different css figures</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Parallax effect</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Responsive layout</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Responsive sliders</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Visit this site :-)</span>
+                          </div>
+                        </div>
+                        <p>/work done</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/coffamaker.png" alt="">
+                    </div>
+                    <div class="col-lg-12 linkVisitSite fontPacifico align-middle">
+                        <a href="https://darker-than-black.github.io/Darker-than-Black/" target="_blank">Visit site <i class="fas fa-coffee"></i></a>
+                    </div>
+                  </div>
+                  <p>/coffe maker</p>
+                </div>
+
+                <div class="row tagConnectLine pt-5">
+                  <p>theme for wordpress</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">
+                      <h3 class="fontCookie">Theme for WordPress "DA Ukraine"</h3>
+                      <h5 class="fontCookie"><span>h3</span> <i>the topic for the site of the educational materials of the Diplomatic Academy (beta)</i> <span>/h3</span></h5>
+                      <div class="container-fluid">
+                        <p>work done</p>
+                        <div class="row tagConnectLine">
+                          <div class="col-12">
+                            <span class="fontPacifico">Interesting design</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Dynamic content</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Parallax effect</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Cross-platform and cross-browser theme</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">AJAX loading posts</span>
+                          </div>
+                          <div class="col-12">
+                            <span class="fontPacifico">Clean code</span>
+                          </div>
+                        </div>
+                        <p>/work done</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/dauk_1.PNG" alt="">
+                    </div>
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/dauk_3.PNG" alt="">
+                    </div>
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/dauk_2.PNG" alt="">
+                    </div>
+                    <div class="col-lg-12 linkVisitSite fontPacifico align-middle">
+                        <a href="https://github.com/Darker-than-Black/theme-for-wordpress-DA-Ukrine" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                  <p>/theme for wordpress</p>
+                </div>
+
+                <div class="row tagConnectLine pt-5">
+                  <p>my portfolio</p>
+                  <div class="col-lg-8 col-md-12 col-sm-12 textInfo pSkills tagConnectLine">
+                      <h3 class="fontCookie">My portfolio</h3>
+                      <h5 class="fontCookie"><span>h3</span> <i>you are now here</i> <span>/h3</span></h5>
+
+                      <div class="linkVisitSite fontPacifico gitPortfolio">
+                        <a href="https://darker-than-black.github.io/Darker-than-Black/" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-12 d-lg-block d-md-none d-sm-none d-none workImg">
+                      <img src="img/portfolio.png" alt="">
+                    </div>
+                  </div>
+                  <p>/my portfolio</p>
+                </div>
+                <p>/body</p>
+              </div>
+              <p>/html</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid" style="display: none;">
+    <div class="row">
+      <div class="col-12 crutch_timer">
+        <img src="crutch.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+</div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+  <script src="js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="owlCarousel/owl.carousel.min.js"></script>
+
+  <script>
+    $(function() {
+      $('input').click( function() {
+        if($('body').hasClass('yellow')) {
+          $('body').removeClass('yellow');
+
+        } else {
+
+          $('body').addClass('yellow');
+        }
+      });
+
+      function removeMenu() {
+        $('.menu').removeClass('top bottom left right');
+        $('.menu').removeClass('leftToRight rightToLeft');
+        $('.menu').removeClass('downToUp upToDown');
+      };
+      function removeMenuCenter() {
+        $('.menu').removeClass('rightToCenter leftToCenter');
+        $('.menu').removeClass('upToCenter downToCenter');
+      };
+      function removeContent() {
+        $('.about').removeClass('active');
+        $('.contact').removeClass('active');
+        $('.skills').removeClass('active');
+        $('.work').removeClass('active');
+      };
+
+      var col = 0;
+      $('.btAbout').click( function() {
+        $('.theme_color').css('display', 'none');
+        removeMenuCenter();
+        removeMenu();
+        if(col == 0) {
+          setTimeout(writeTextNormal, 1300);
+          col++;
+        } else {
+          setTimeout(writeTextFast, 1300);
+        }
+        if($('.contact').hasClass('active')) {
+          removeContent();
+          if ($('.about').hasClass('active')){
+            $('.menu').removeClass('upToDown');
+            $('.about').removeClass('active'); 
+          }else{
+            $('.about').addClass('active');
+            $('.menu').addClass('upToDown');
+          }
+        } else {
+          removeContent();
+          if ($('.about').hasClass('active')){
+            $('.menu').removeClass('top');
+            $('.about').removeClass('active'); 
+          }else{
+            $('.about').addClass('active');
+            $('.menu').addClass('top');
+          }
+        }
+      });
+
+      $('.btContact').click( function() {
+        $('.theme_color').css('display', 'none');
+        removeMenuCenter();
+        removeMenu();
+        if($('.about').hasClass('active')) {
+          $('#aboutMe').hide();
+          removeContent();
+          if ($('.contact').hasClass('active')){
+            $('.menu').removeClass('downToUp');
+            $('.contact').removeClass('active'); 
+          }else{
+            $('.contact').addClass('active');
+            $('.menu').addClass('downToUp');
+          }
+        } else {
+          removeContent();
+          if ($('.contact').hasClass('active')){
+            $('.menu').removeClass('bottom');
+            $('.contact').removeClass('active'); 
+          }else{
+            $('.contact').addClass('active');
+            $('.menu').addClass('bottom');
+        }
+        }
+      });
+
+      $('.btSkills').click( function() {
+        $('.theme_color').css('display', 'none');
+        removeMenuCenter();
+        removeMenu();
+        if($('.work').hasClass('active')) {
+          removeContent();
+          if ($('.skills').hasClass('active')){ 
+            $('.menu').removeClass('leftToRight');
+            $('.skills').removeClass('active');  
+          }else{
+            $('.skills').addClass('active');
+            $('.menu').addClass('leftToRight');
+          }
+        } else {
+          if($('.about').hasClass('active'))
+            $('#aboutMe').hide();
+          removeContent();
+          if ($('.skills').hasClass('active')){
+            $('.menu').removeClass('left');
+            $('.skills').removeClass('active');  
+          }else{
+            $('.skills').addClass('active');
+            $('.menu').addClass('left');
+          }
+        }
+      });
+
+      $('.btWork').click( function() {
+        $('.theme_color').css('display', 'none');
+        removeMenuCenter();
+        removeMenu();
+        if($('.skills').hasClass('active')) {
+          removeContent();
+          if ($('.work').hasClass('active')){ 
+            $('.menu').removeClass('rightToLeft');
+            $('.work').removeClass('active'); 
+          }else{
+            $('.work').addClass('active');
+            $('.menu').addClass('rightToLeft');
+          }
+        } else {
+          if($('.about').hasClass('active'))
+            $('#aboutMe').hide();
+          removeContent();
+          if ($('.work').hasClass('active')){ 
+            $('.menu').removeClass('right');
+            $('.work').removeClass('active'); 
+          }else{
+            $('.work').addClass('active');
+            $('.menu').addClass('right');
+          }
+        }
+      });
+
+      $('.btHome').click(function() {
+        $('.theme_color').css('display', 'block');
+        if($('.about').hasClass('active')) {
+          $('#aboutMe').hide();
+          removeContent();     
+          $('.menu').addClass('upToCenter');
+          removeMenu();
+        } else if($('.contact').hasClass('active')) {
+          removeContent();
+          $('.menu').addClass('downToCenter');
+          removeMenu();
+        } else if($('.work').hasClass('active')) {
+          removeContent();
+          $('.menu').addClass('leftToCenter');
+          removeMenu();
+        } else if($('.skills').hasClass('active')) {
+          removeContent();
+          $('.menu').addClass('rightToCenter');
+          removeMenu();
+        } else {
+          removeContent();
+          setTimeout(removeMenu, 2100);
+        }
+      });
+
+      
+    });
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    };
+
+    $.fn.animate_Text = function(speed) {
+      var string = this.text();
+      return this.each(function(){
+       var $this = $(this);
+        $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+         $this.find('span.new').each(function(i, el){
+          setTimeout(function(){ $(el).addClass('div_opacity'); }, speed * i);
+         });
+      });
+     };
+    function writeTextNormal () {
+      $('#aboutMe').show();
+      $('#aboutMe').animate_Text(120);
+    };
+    function writeTextFast () {
+      $('#aboutMe').show();
+      /*$('#aboutMe').animate_Text();*/
+    };
+
+
+  </script>
+</body>
+</html>

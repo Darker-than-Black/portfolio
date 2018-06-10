@@ -1,0 +1,376 @@
+.about,
+.contact,
+.skills,
+.work {
+  display: block;
+  position: fixed;
+  /* padding: 30px 0; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 9;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  overflow: auto;
+  /* transition: all 1s; */
+  background-color: #ecf0f1;
+}
+
+.about,
+.contact {
+  width: 100%;
+  height: 85vh;
+}
+
+.skills,
+.work {
+  width: 90vw;
+  height: 100%;
+}
+
+.about {
+  top: -85vh;
+  transition: top 1s linear;
+}
+.contact {
+bottom: -85vh;
+  transition: bottom 1s linear;
+}
+.skills {
+  left: -90vw;
+  transition: left 1s linear;
+}
+.work {
+  right: -90vw;
+  transition: right 1s linear;
+}
+
+/* Active Block */
+.about.active {
+  top: 0;
+}
+.contact.active {
+  bottom: 0;
+}
+.skills.active {
+  left: 0;
+}
+.work.active {
+  right: 0;
+}
+.content {
+  padding-left: 0;
+}
+
+/*macOS window */
+.macOS_window {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid #adadad;
+  max-width: 95%;
+  margin: 20px auto;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);
+  /* overflow: hidden; */
+}
+
+.macOS_bar {
+  background:
+  radial-gradient(7px at 14px 50%, #ff5e57 0px, #ff635a 5px, #fd5249 6px, rgba(255, 255, 255, 0) 7px),
+  radial-gradient(7px at 34px 50%, #ffbd2e 0px, #ffc42f 5px, #fcb91b 6px, rgba(255, 255, 255, 0) 7px),
+  radial-gradient(7px at 54px 50%, #cfcfcf 0px, #d3d3d3 5px, #c6c6c6 6px, rgba(255, 255, 255, 0) 7px),
+  linear-gradient(to top, #cccccc 0%, #d6d6d6 1px, #ebebeb 100%);
+  border: 1px solid white;
+  border-left-color: #f3f3f3;
+  border-right-color: #f3f3f3;
+  border-bottom-color: #bdbdbd;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 20px;
+  text-align: center;
+  color: #505151;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.macOS_content {
+  /* margin-bottom: 50px; */
+  /* padding: 15px 0 35px 0; */
+ /*  height: 100%; */
+ position: relative;
+}
+
+
+/* About */
+.macOS_content .theme-num {
+  padding: 0;
+}
+.aboutContent {
+  max-width: 96%;
+  padding-left: 4%;
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+.aboutContent .container-fluid .row {
+  margin-left: 0;
+  padding-left: 15px;
+}
+.title_block {
+  padding: 35px 0;
+}
+.title_block > .col-12 {
+  padding: 10px 25px;
+}
+.fontCookie > span {
+  text-shadow: -6px 6px 0px rgba(255, 211, 0, 1);
+}
+.fontCookie > i {
+  text-shadow: -2px 1px 0px rgba(255, 211, 0, 1);
+}
+.fontCookie span:hover {
+  animation: nameHover 2s linear infinite;
+}
+.fontCookie i:hover {
+  animation: bHover 2s infinite;
+}
+@keyframes bHover {
+  0% {color: #06070d}
+  50% {color: transparent;}
+  100% {color: #06070d;}
+}
+@keyframes nameHover {
+  0% {
+    text-shadow: -6px 6px 0px rgba(255, 211, 0, 1);
+    margin-left: 0;
+  }
+  50% {
+    text-shadow: none;
+    margin-left: -3px;
+  }
+  100% {
+    text-shadow: -6px 6px 0px rgba(255, 211, 0, 1);
+    margin-left: 0;
+  }
+}
+h5.fontCookie {
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+h5.fontCookie > span {
+  text-shadow: none;
+  font-family: 'Indie Flower', cursive; 
+  line-height: .8em;
+  font-size: .8em;
+}
+h5.fontCookie > span:hover {
+  animation: none;
+}
+.textInfo {
+  padding: 15px 0;
+}
+.textInfo .continer-fluid .row {
+  padding: 15px 10px;
+}
+.textInfo .continer-fluid .row .col-12 > h5 {
+  padding-left: 0;
+  line-height: 1.2em;
+}
+h3.fontCookie {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+#aboutMe {
+  padding: 0 15px 15px 30px;
+  display: none;
+}
+#aboutMe .new{
+  opacity: 0;
+}
+#aboutMe .div_opacity{
+  animation: textAnim .2s ease-in-out;
+  opacity: 1;
+}
+@keyframes textAnim {
+  0% { 
+    opacity: 0.5; 
+    border-right: 2px solid black;
+  }
+  100% { 
+    opacity: 1;
+    border-right: none;
+  }
+}
+.theme-num {
+  font-family: 'Abel', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  display: block;
+  height: 23px;
+  margin: 0 0 0 5px;
+  overflow: hidden;
+  height: 100%;
+  text-overflow: clip;
+  position: absolute; 
+}
+
+.contact .textInfo h5.fontCookie {
+  font-size: 2.3em;
+}
+.contact .textInfo h5.fontCookie i:hover,
+.skills .pSkills .continer-fluid .row h1 i:hover,
+.work h5.fontCookie i:hover {
+  animation: none;
+}
+.contact .textInfo h5.fontCookie > button {
+  background: rgba(255, 211, 0, 1);
+  border: none;
+  outline: none;
+  font-size: .8em;
+  float: right;
+  border: none;
+  border-right: 2px solid #06070d;
+  border-bottom: 2px solid #06070d;
+  color: #06070d;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 7px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.contact .textInfo h5.fontCookie > button:hover {
+  border-right: 2px solid rgba(255, 211, 0, 1);
+  border-bottom: 2px solid rgba(255, 211, 0, 1);
+}
+.contact .textInfo h5.fontCookie > button:active,
+.contact .textInfo h5.fontCookie > button:focus {
+  margin-top: 2px;
+  margin-left: 2px;
+  border: none;
+}
+.contact .textInfo h5.fontCookie > button:active,
+.contact .textInfo h5.fontCookie > button:focus,
+.contact .textInfo h5.fontCookie > button:hover {
+  color: rgba(255, 211, 0, 1);
+  background: #06070d;
+}
+.contact .textInfo h5.fontCookie > button a {
+  padding: 0 5px;
+  line-height: 1em;
+}
+.contact .textInfo h5.fontCookie > button:active a,
+.contact .textInfo h5.fontCookie > button:hover a,
+.contact .textInfo h5.fontCookie > button:focus a {
+  color: rgba(255, 211, 0, 1);
+  text-decoration: none;
+}
+.contact .textInfo .container-fluid .col-12 span a {
+  font-size: 3.5em;
+  text-shadow: -3px 2px 0px rgba(255, 211, 0, 1);
+}
+.contact .textInfo .container-fluid .col-12 span:hover a,
+.contact .textInfo .container-fluid .col-12 span:active a,
+.contact .textInfo .container-fluid .col-12 span:focus a {
+  color: rgba(255, 211, 0, 1);
+  text-shadow: -3px 2px 0px #06070d;
+}
+
+.skills .textInfo h1.fontCookie {
+  font-size: 2.5em;
+}
+.skillDesk .container-fluid{
+  /* overflow:hidden; */
+  padding:1em 0;
+}
+.skillDesk .container-fluid .col-12 a{
+  text-decoration:none;
+  font-family: 'Roboto Slab', serif;
+  background: rgba(255, 211, 0, 1);
+  display:inline-block;
+  height: auto;
+  width: 100%;
+  min-width: 15em;
+  padding:1em;
+  box-shadow: 0px 0px 14px 4px rgba(33,33,33,.7);
+
+  transition: transform .15s linear;
+  transform: rotate(-6deg);
+}
+.skillDesk .container-fluid .col-12{
+  margin:1em;
+  float:left;
+  list-style:none;
+}
+.skillDesk .container-fluid .col-12 h2{
+  font-size:140%;
+  font-family: 'Roboto Slab', serif;
+  padding-bottom:10px;
+  padding-left: 0;
+}
+.skillDesk .container-fluid .col-12:nth-child(even) a{
+  transform:rotate(4deg);
+  position:relative;
+  background: #06070d;
+  color: rgba(255, 211, 0, 1);
+}
+.skillDesk .container-fluid .col-12:nth-child(even) a:hover,
+.skillDesk .container-fluid .col-12:nth-child(even) a:focus,
+.skillDesk .container-fluid .col-12:nth-child(odd) a:hover,
+.skillDesk .container-fluid .col-12:nth-child(odd) a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  color: #06070d;
+  background: rgba(255, 211, 0, 1);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+.skillDesk .container-fluid .col-12:nth-child(odd) a:hover,
+.skillDesk .container-fluid .col-12:nth-child(odd) a:focus{
+  background: #06070d;
+  color: rgba(255, 211, 0, 1);
+}
+.work .aboutContent .workImg {
+  margin: 35px 0  ;
+}
+.work h5.fontCookie {
+  font-size: 1.7em;
+  line-height: 1em;
+}
+.work h5.fontCookie i {
+  text-shadow: none;
+}
+
+.work .workImg img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: url('https://static8.depositphotos.com/1269954/889/v/950/depositphotos_8891672-stock-illustration-desert-camouflage-seamless-pattern.jpg');
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.work .linkVisitSite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work .fontPacifico a {
+  padding: 8px 15px;
+  border: 2px solid #06070d;
+  border-radius: 7px;
+  box-shadow: 2px 1px 2px 1px rgba(0,0,0,.75);
+  background:  rgba(255, 211, 0, 1);
+  text-decoration:none;
+}
+.work .fontPacifico a:hover {
+  color: rgba(255, 211, 0, 1);
+  background: #06070d;
+}
+.work .gitPortfolio {
+  justify-content: left;
+  margin: 25px;
+}

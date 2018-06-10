@@ -1,0 +1,98 @@
+.hidden-menu {
+  display: block;
+  position: fixed;
+  padding: 30px 0; 
+  margin: 0;
+  box-sizing: border-box;
+  width: 370px;
+  background-color: rgba(162, 234, 224, 0.05);
+  height: 100%;
+  top: 0;
+  right: -370px;
+  transition: right 1s ease-in;
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  padding-right: 40px;
+  overflow: auto;
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  /* box-shadow: inset 0px 0px 0px 35px rgba(0,0,0,0.2); */
+  padding: 5px;
+  position: fixed;
+  top: 15px;
+  right: 17px;
+  cursor: pointer;
+  transition: 1s ease-in;
+  z-index: 999;
+  width: 35px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  border: 1px solid rgba(17, 20, 34, 0.6);
+}
+
+.name-menu {
+  right: 55px;
+  top: 10px;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  width: auto;
+  box-shadow: none;
+}
+
+.btn-menu span {
+  display: block;
+  height: 5px;
+  /* background-color: #000; */
+  background-color: rgba(17, 20, 34, 0.6);
+  margin: 5px 0 0;
+  transition: 1s linear;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  /* background-color: #0f7e9b; */
+  border: none;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span {
+  background-color: #fff;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  right: 387px;
+}
+.hidden-menu-ticker:checked ~ .menu {
+  right: 370px;
+  background-color: rgba(162, 234, 224, 0.05)
+}
+.hidden-menu-ticker:checked ~ .menu ul li a i {
+  color: rgba(250, 250, 250, .9);
+}
+.hidden-menu-ticker:checked ~ .name-menu {
+  display: none;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  transform: rotate(-45deg);
+  top: -10px;
+}

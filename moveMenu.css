@@ -1,0 +1,180 @@
+/* Active Menu */
+.menu.top {
+  animation-name: mActiveTop;
+  animation-duration: 1s;
+
+  top: 85vh;
+  height: 15vh;
+}
+@keyframes mActiveTop {
+  0% {
+    top: 0;
+    height: 100vh;
+  }
+  100%{
+    top: 85vh;
+    height: 15vh;
+  }
+}
+.menu.bottom {
+  animation-name: mActiveBottom;
+  animation-duration: 1s;
+
+  bottom: 85vh;
+  height: 15vh;
+}
+ @keyframes mActiveBottom {
+  0% {
+    bottom: 0;
+    height: 100vh;
+  }
+  100%{
+    bottom: 85vh;
+    height: 15vh;
+  }
+}
+.menu.left {
+  animation-name: mActiveLeft;
+  animation-duration: 1s;
+
+  left: 90vw;
+  width: 10vw;
+}
+@keyframes mActiveLeft {
+  0% {
+    left: 0;
+    width: 100vw;
+  }
+  100%{
+    left: 90vw;
+    width: 10vw;
+  }
+}
+.menu.right {
+  animation-name: mActiveRight;
+  animation-duration: 1s;
+
+  right: 90vw;
+  width: 10vw;
+}
+@keyframes mActiveRight {
+  0% {
+    right: 0;
+    width: 100vw;
+  }
+  100%{
+    right: 90vw;
+    width: 10vw;
+  }
+}
+.menu.top,
+.menu.bottom,
+.menu.left,
+.menu.right,
+.menu.leftToRight,
+.menu.rightToLeft,
+.menu.upToDown,
+.menu.downToUp,
+.menu.leftToUp {
+  font-size: .8em;
+  background-color: transparent;
+}
+.menu.left ul,
+.menu.right ul,
+.menu.leftToRight ul,
+.menu.rightToLeft ul  {
+  display: inline-block;
+}
+.menu.left ul li,
+.menu.right ul li {
+  animation: floatMenu 1s linear;
+  float: none;
+  width: auto;
+  height: 20%;
+}
+
+@keyframes floatMenu {
+  0% {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+  }
+  25%{
+    height: 20vh;
+    width: 100%;
+  }
+  100% {
+    float: none;   
+  }
+}
+.menu.upToCenter {
+  animation: upToCenter 1s linear;
+  height: 100vh;
+  
+  top: auto;
+  bottom: auto;
+}
+@keyframes upToCenter {
+  from {
+    height: 15vh;
+    top: 85vh;
+  }
+  to{
+    height: 100vh;
+    top: 0;
+  }
+}
+
+.menu.downToCenter {
+  animation: downToCenter 1s linear;
+  height: 100vh;
+  
+  top: auto;
+  bottom: auto;
+}
+@keyframes downToCenter {
+  from {
+    height: 15vh;
+    bottom: 85vh;
+  }
+  to{
+    height: 100vh;
+    bottom: 0;
+  }
+}
+
+.menu.leftToCenter {
+  animation: leftToCenter 1s linear;
+  width: 100vw;
+  
+  left: auto;
+  right: auto;
+}
+@keyframes leftToCenter {
+  from {
+    width: 10vw;
+    right: 90vw;
+  }
+  to{
+    width: 100vw;
+    right: 0;
+  }
+}
+
+.menu.rightToCenter {
+  animation: rightToCenter 1s linear;
+  width: 100vw;
+  
+  left: auto;
+  right: auto;
+}
+@keyframes rightToCenter {
+  from {
+    width: 10vw;
+    left: 90vw;
+  }
+  to{
+    width: 100vw;
+    left: 0;
+  }
+}

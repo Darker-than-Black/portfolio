@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #06070d;
+  color: #06070d;
+}
+
+a {
+  color: #06070d;
+}
+p {
+  font-family: 'Indie Flower', cursive; 
+  line-height: .8em;
+  font-style: italic;
+  font-size: 1.35em;
+  margin-bottom: 0;
+  width: 100%;
+}
+h5.fontCookie > span:before,
+p:before {
+  content: '<';
+}
+h5.fontCookie > span:after,
+p:after {
+  content: '>';
+}
+h5.fontCookie > span:before,
+h5.fontCookie > span:after,
+p:before,
+p:after {
+  color: #7c1e3b;
+}
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+
+  z-index: 99;
+
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+
+  /* background-color: rgba(6, 7, 13, .9); */
+}
+
+.menu ul {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  float: left;
+  font-size: 4.5em;
+  width: 20%;
+  display: block;
+  text-align: center;
+}
+
+.menu ul li a {
+  color: rgba(255, 211, 0, 1);
+}
+
+.menu ul li a span {
+  display: none;
+  font-size: .5em;
+  letter-spacing: .8px;
+  font-family: 'Indie Flower', cursive;
+  color: rgba(255, 211, 0, 1);
+}
+.menu ul li:hover a span {
+  display: inline-block;
+}
+.menu ul li:hover a i {
+  display: none;
+}
+
+/* Theme color */
+.theme_color {
+  position: absolute;
+  margin: 25px 45px;
+  right: 0;
+  width: 76px;
+  height: 36px;
+  background: rgba(255, 211, 0, 1);
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2), 0px -2px 0px rgba(255, 255, 255, 0.2);
+  /* cursor: pointer; */
+}
+.theme_color:after,
+.theme_color:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  /* z-index: 0; */
+}
+.theme_color:after {
+  background: url(sun.svg) no-repeat;
+  right: 3px;
+  top: 4px;
+}
+.theme_color:before {
+  background: url(moon.svg) no-repeat;
+  left: 3px;
+  top: 4px;
+}
+.theme_color label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #7c1e3b;
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.theme_color input[type="checkbox"] {
+  visibility: hidden;
+}
+.theme_color input[type="checkbox"]:checked + label {
+  left: 43px; 
+}
+.yellow {
+  background-color: rgba(255, 211, 0, 1);
+  color: #fff;
+}
+.yellow a,
+.yellow i {
+  color: #06070d;;
+  text-shadow: none;
+}
+.yellow .menu ul li a,
+.yellow .menu ul li a span,
+.yellow .skillDesk .container-fluid .col-12:nth-child(odd) a  {
+  color: #06070d;
+}
+.yellow .content > div.wrapper {
+  
+}
+.yellow .content .macOS_window {
+  /* box-shadow: 0 20px 70px rgba(255, 255, 255, .3); */
+  background: #06070d;
+  border: 1px solid #06070d;
+}
+.yellow .tagConnectLine,
+.yellow .about .aboutContent .container-fluid > .row{
+  border-left: 1px dotted rgba(255, 211, 0, 1);
+}
+.yellow .skillDesk .container-fluid .col-12:nth-child(odd) a:hover,
+.yellow .skillDesk .container-fluid .col-12:nth-child(odd) a:focus {
+  color: rgba(255, 211, 0, 1);
+}
+.yellow .content .wrapper .pSkills i {
+  color: #fff;
+}
+.yellow .content .wrapper .pSkills .fab,
+.yellow .content .wrapper .pSkills .fas {
+  color: #06070d;
+  text-shadow: -3px 2px 0px rgba(255, 211, 0, 1);
+}
+.yellow .content .wrapper .pSkills .fab:hover,
+.yellow .content .wrapper .pSkills .fas:hover {
+  color: transparent;
+}
+.yellow .about h1 i,
+.yellow .contact h5 > i,
+.yellow .contact span a i{
+  color: rgba(255, 211, 0, 1);
+}
+.yellow .contact span a i {
+  text-shadow: -3px 2px 0px #fff;
+}
+.yellow .contact span a i:hover {
+  text-shadow: -3px 2px 0px rgba(255, 211, 0, 1);
+  color: #fff;
+}
+.yellow .about h1 i:hover {
+  animation: none;
+}
+
+
+
+/* Key classes */
+.tagConnectLine,
+.about .aboutContent .container-fluid > .row{
+  border-left: 1px dotted #06070d;
+  margin: 1px 0;
+}
+
+.fontCookie {
+  font-family: 'Cookie', cursive;
+  font-size: 3.5em;
+  padding-left: 25px;
+  line-height: .9em;
+  letter-spacing: 1.5px; 
+  margin-bottom: 0;
+}
+.fontPacifico {
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  border-radius: 100px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0,0,0,0.5);
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-height: 10px; 
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61);
+  border-radius: 100px;
+}

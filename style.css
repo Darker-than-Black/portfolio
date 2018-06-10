@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	background-color: #111422;
+
+	height: 3000px;
+
+
+	
+}
+
+header {
+	background-image: url(https://vignette.wikia.nocookie.net/undertale/images/c/c6/T%C5%82o_na_stron%C4%99_Sandy.jpg/revision/latest?cb=20161111154406&path-prefix=pl);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100%;
+	width: auto;
+  	opacity: .25;
+
+  	/* box-shadow: inset 0px 0px 25px 10px rgba(0,0,0,0.8); */
+
+}
+
+#particles-js {
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+	height: 100%;	
+}
+
+.menu {
+	background-color: rgba(162, 234, 224, 0.4);
+	/* width: 50px; */
+	width: 70px;
+	height: 100vh;
+	position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: right 1s ease-in;
+}
+
+.menu ul {
+	list-style: none;
+	padding-left: 0;
+	/* width: 100%; */
+	text-align: center;
+	/* margin-top: 20vh; */
+}
+
+.menu ul li {
+	/* margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%; */
+	margin: 20px auto;
+	height: 32px;
+	display: block;
+}
+
+.menu ul li a {
+	color: rgba(17, 20, 34, 0.6);
+	font-size: 2em;
+	position: relative;
+	width: 100%;
+
+}
+
+.menu li a i {
+	display: block;
+}
+
+/* .menu ul > li:nth-child(2),
+.menu ul > li:last-child {
+	margin-left: 4px;
+}
+
+.menu ul > li:nth-child(3),
+.menu ul > li:first-child {
+	margin-left: 2px;
+} */
+
+.menu ul li a span {
+	display: none;
+   	/* font-family: 'Roboto', sans-serif; */
+   	font-size: 13px;
+    color: #fff;
+    font-family: 'Acme', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*.fa-home::after {
+	content: 'home';
+	display: block;
+
+}
+
+.fa-napster::after {
+	content: 'about';
+	display: block;
+
+}
+
+.fa-gem::after {
+	content: 'skills';
+	display: block;
+
+}
+
+.fa-code::after {
+	content: 'my work';
+	display: block;
+
+}
+
+.fa-envelope::after {
+	content: 'contact';
+	display: block;
+
+}
+ */
+.menu ul li:hover a i {
+	/* opacity: .2; */
+	display: none;
+}
+
+.menu ul li:hover a span {
+	/* opacity: .2; */
+	display: block;
+}
+
+/* .menu ul li:hover a i::after {
+	display: block;
+} */

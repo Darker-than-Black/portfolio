@@ -1,0 +1,71 @@
+/* Crossovers Menu */
+.menu.leftToRight {
+  animation: leftToRight 1s linear;
+  width: 10vw;
+  left: 90vw;
+
+}
+.menu.leftToRight ul li,
+.menu.rightToLeft ul li {
+  float: none;
+  width: auto;
+  height: 20%;
+}
+@keyframes leftToRight {
+  from {
+    right: 90vw;
+    left: 0;
+  }
+  to{
+    right: 0;
+    left: 90vw;
+  }
+}
+
+.menu.rightToLeft {
+  animation: rightToLeft 1s linear;
+  width: 10vw;
+  right: 90vw;
+}
+@keyframes rightToLeft {
+  from {
+    left: 90vw;
+    right: 0;
+  }
+  to{
+    left: 0;
+    right: 90vw;
+  }
+}
+
+.menu.upToDown {
+  animation: upToDown 1s linear;
+  height: 15vh;
+  top: 85vh;
+}
+@keyframes upToDown {
+  from {
+    top: 0;
+    bottom: 85vh;
+  }
+  to {
+    top: 85vh;
+    bottom: 0;
+  }
+}
+
+.menu.downToUp {
+  animation: downToUp 1s linear;
+  height: 15vh;
+  bottom: 85vh;
+}
+@keyframes downToUp {
+  from {
+    bottom: 0;
+    top: 85vh;
+  }
+  to {
+    bottom: 85vh;
+    top: 0;
+  }
+}
